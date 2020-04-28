@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SettingFragment">
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:text="Settings"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/setting_title"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_below="@+id/v"
+        android:id="@+id/login_title"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <RelativeLayout
+       android:id="@+id/login_area"
+       android:layout_below="@+id/login_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+     <ImageView
+         android:id="@+id/profile"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_margin="10dp"
+         android:scaleType="centerCrop"
+         android:src="@drawable/ic_user" />
+
+       <RelativeLayout
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/profile"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/user_code"
+               android:text="Your Code:"
+               android:textSize="15sp"
+               android:textColor="#000"
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/code"
+               android:text="0000000"
+               android:textSize="15sp"
+               android:textColor="#000"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@+id/user_code"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/alert"
+               android:text="please login to vote!"
+               android:layout_marginLeft="10dp"
+               android:layout_below="@+id/code"
+               android:textColor="#f40303"
+               android:textSize="15sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+
+
+
+       <ImageView
+           android:id="@+id/logout"
+           android:src="@drawable/ic_logout"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+           android:layout_centerVertical="true"
+           android:padding="5dp"
+           android:layout_width="40dp"
+           android:layout_height="40dp" />
+
+       <ImageView
+           android:id="@+id/login"
+           android:src="@drawable/ic_login"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+           android:layout_centerVertical="true"
+           android:padding="5dp"
+           android:layout_width="40dp"
+           android:layout_height="40dp" />
+
+
+
+   </RelativeLayout>
+
+    <View
+        android:id="@+id/firstView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b4b4b4"
+        android:layout_below="@+id/login_area"/>
+
+
+  <android.support.v7.widget.CardView
+      android:layout_below="@+id/firstView"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardElevation="3dp"
+      app:cardCornerRadius="5dp">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:id="@+id/reg_title"
+              android:textSize="18sp"
+              android:text="Register"
+              android:textColor="@color/colorPrimary"
+              android:layout_margin="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <ImageView
+              android:id="@+id/edit"
+              android:layout_margin="10dp"
+              android:layout_alignParentRight="true"
+              android:src="@drawable/ic_edit_black"
+              android:layout_width="30dp"
+              android:layout_height="30dp" />
+
+          <TextView
+              android:layout_below="@+id/edit"
+              android:id="@+id/name_title"
+              android:text="Name"
+              android:textSize="18sp"
+              android:textColor="@color/colorPrimary"
+              android:layout_margin="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:layout_below="@+id/edit"
+              android:id="@+id/name"
+              android:text="Unknown"
+              android:textSize="18sp"
+              android:layout_toRightOf="@+id/name_title"
+              android:textColor="@color/colorPrimary"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:layout_below="@+id/name_title"
+              android:id="@+id/roll_title"
+              android:text="Roll No."
+              android:textSize="18sp"
+              android:textColor="@color/colorPrimary"
+              android:layout_marginLeft="10dp"
+              android:layout_marginBottom="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:layout_below="@+id/name"
+              android:id="@+id/roll"
+              android:text="Unknown"
+              android:textSize="18sp"
+              android:layout_toRightOf="@+id/name_title"
+              android:textColor="@color/colorPrimary"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+      </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/logoView"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@+id/firstView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/loginTitle"
+                android:text="Register"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/one"
+                android:layout_below="@+id/loginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:hint="Name"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/two"
+                android:layout_below="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/roll_input"
+                    android:hint="Roll No."
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Save"
+                android:textColor="#fff"
+                android:layout_below="@+id/two"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Cancel"
+                android:textColor="#fff"
+                android:layout_toLeftOf="@+id/save"
+                android:layout_below="@+id/two"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

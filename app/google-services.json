@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "173450841312",
+    "firebase_url": "https://welcome-46904.firebaseio.com",
+    "project_id": "welcome-46904",
+    "storage_bucket": "welcome-46904.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173450841312:android:0edb25751dcdfe2f",
+        "android_client_info": {
+          "package_name": "abc.home.zarni.welcomevoting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173450841312-urc1k9lvjhkm1o98braftt66h52ud8jh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abc.home.zarni.welcomevoting",
+            "certificate_hash": "50cb67e4b94abcf233915bd356dc604eba8981f8"
+          }
+        },
+        {
+          "client_id": "173450841312-386p1b46o6005v1l4vgt9i449eo5r3ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDkrgYN7Yya6PB_jyY99GYwK0LbD_Po4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173450841312-386p1b46o6005v1l4vgt9i449eo5r3ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

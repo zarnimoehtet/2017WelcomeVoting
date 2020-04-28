@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title = "Home"
+        />
+
+        <tab
+            id="@+id/tab_king"
+            icon="@drawable/ic_king"
+            title="Kings"
+             />
+
+    <tab
+        id="@+id/tab_queen"
+        icon="@drawable/ic_queen"
+        title = "Queens"
+        />
+
+
+
+    <tab
+        id="@+id/tab_set"
+        icon="@drawable/ic_controls"
+        title = "Settings"
+        />
+
+    </tabs>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card"
+    android:layout_centerInParent="true"
+    android:layout_width="220dp"
+    android:layout_height="280dp"
+    android:layout_margin="10dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/image_layer"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="140dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+
+            <ImageView
+                android:id="@+id/fb"
+                android:src="@drawable/ic_facebook_logo"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_round"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_below="@+id/image_layer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Mg Mg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/section"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="Section A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/view"
+            android:src="@drawable/ic_view"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/vote"
+            android:src="@drawable/ic_check_mark"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/dialog"-->
+
+        <!--app:cardCornerRadius="5dp"-->
+        <!--app:cardElevation="3dp"-->
+        <!--android:layout_margin="20sp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/dialog_title"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="သတိပေးချက်"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/dialog_body"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="Application မှ ထွက်လိုပါသလား?"-->
+                <!--android:layout_below="@+id/dialog_title"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/yes"-->
+                <!--android:padding="5dp"-->
+                <!--android:background="@null"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:text="ထွက်မယ်"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<Button-->
+                <!--android:id="@+id/no"-->
+                <!--android:background="@null"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_toLeftOf="@+id/yes"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:text="မထွက်ဘူး"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</RelativeLayout>
